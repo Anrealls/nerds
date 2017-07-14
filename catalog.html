@@ -2,11 +2,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>NerdsCatalog</title>
     <link type="text/css" rel="stylesheet" href="css/css.css">
     <link type="text/css" rel="stylesheet" href="fonts/fonts.css"/>
-    <script type="text/javascript" src="js/javascript.js"></script>
  </head>
 <body>
 <header class="main-header">
@@ -40,158 +39,160 @@
         </h1>
     </div>
 </header>
-<main class="container">
-    <form class="catalog-content-left" method="post" action="">
-        <div class="price">
-            <h3 class="catalog-title-price">Стоимость:</h3>
-            <div class="range">
-                    <div class="slider-range">
-                        <img src="img/shape.png" width="240" height="81" alt="">
+<main>
+    <div class="container">
+        <form class="catalog-content-left" method="post" action="">
+            <div class="price">
+                <h3 class="catalog-title-price">Стоимость:</h3>
+                <div class="range">
+                        <div class="slider-range">
+                            <img src="img/shape.png" width="240" height="81" alt="">
+                        </div>
+                        <label for="amount">от</label>
+                        <input type="text" id="amount" value="0"/>
+                        <label class="amount_1" for="amount_1">до</label>
+                        <input type="text" id="amount_1" value="15000"/>
+                </div>
+            </div>
+            <div class="grid">
+                <h3 class="catalog-title-grid">Сетка:</h3>
+                <ul>
+                    <li class="radio">
+                        <input type="radio" name="radio" id="radio1" value="adapt" checked>
+                        <label for="radio1">Адаптивная</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="radio" id="radio2" value="fix">
+                        <label for="radio2">Фиксированная</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="radio" id="radio3" value="rub">
+                        <label for="radio3">Резиновая</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="features">
+                <h3 class="catalog-title-features">Особенности:</h3>
+                <ul>
+                    <li class="checkbox">
+                        <input type="checkbox" name="slide" id="slide" checked>
+                        <label for="slide">Слайдер</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="block" id="block">
+                        <label for="block">Блок преимуществ</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="news" id="news" checked>
+                        <label for="news">Новости</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="gallery" id="gallery">
+                        <label for="gallery">Галерея</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="cart" id="cart">
+                        <label for="cart">Корзина</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-catalog-main-left" type="submit">Показать</button>
+        </form>
+        <div class="catalog-content-right clearfix">
+            <div class="catalog-sort">
+                <b class="catalog-title-sort">Сортировать:</b>
+                <ul>
+                    <li>
+                        <a href="#">по цене</a>
+                    </li>
+                    <li>
+                        <a href="#">по типу</a>
+                    </li>
+                    <li>
+                        <a href="#">по функционалу</a>
+                    </li>
+                </ul>
+                <span class="icon-top"></span>
+                <span class="icon-down"></span>
+            </div>
+            <div class="catalog-item">
+                <figure class="catalog pattern1">
+                    <a href="#"><img src="img/pattern1.png" width="240" height="240" alt=""></a>
+                    <div class="hover-item">
+                        <h3 class="title">Aviator</h3>
+                        <p>
+                            Одностраничный макет с авторским дизайном
+                        </p>
+                        <button class="btn btn-catalog-hover" type="button">8000 Р .</button>
                     </div>
-                    <label for="amount">от</label>
-                    <input type="text" id="amount" value="0"/>
-                    <label class="amount_1" for="amount_1">до</label>
-                    <input type="text" id="amount_1" value="15000"/>
+                </figure>
+                <figure class="catalog pattern2">
+                    <a href="#"><img src="img/pattern2.png" width="240" height="240" alt=""></a>
+                    <div class="hover-item">
+                        <h3 class="title">Sunset</h3>
+                        <p>
+                            Интернет-магазин с личным кабинетом
+                        </p>
+                        <button class="btn btn-catalog-hover" type="button">10000 Р .</button>
+                    </div>
+                </figure>
+                <figure class="catalog pattern3">
+                    <a href="#"><img src="img/pattern3.png" width="240" height="240" alt=""></a>
+                    <div class="hover-item">
+                        <h3 class="title">Forte</h3>
+                        <p>
+                            Отличный макет для личного блога
+                        </p>
+                        <button class="btn btn-catalog-hover" type="button">5000 Р .</button>
+                    </div>
+                </figure>
+                <figure class="catalog pattern4">
+                    <a href="#"><img src="img/pattern4.png" width="240" height="240" alt=""></a>
+                    <div class="hover-item">
+                        <h3 class="title">Modern Organic Thai</h3>
+                        <p>
+                            Сайт для ресторана быстрого питания
+                        </p>
+                        <button class="btn btn-catalog-hover" type="button">12000 Р .</button>
+                    </div>
+                </figure>
+                <figure class="catalog pattern5">
+                    <a href="#"><img src="img/pattern5.png" width="239" height="240" alt=""></a>
+                    <div class="hover-item">
+                        <h3 class="title">Avenue</h3>
+                        <p>
+                            Макет для блога о путишествиях
+                        </p>
+                        <button class="btn btn-catalog-hover" type="button">8000 Р .</button>
+                    </div>
+                </figure>
+                <figure class="catalog pattern6">
+                    <a href="#"><img src="img/pattern6.png" width="239" height="240" alt=""></a>
+                    <div class="hover-item">
+                        <h3 class="title">Dovetail</h3>
+                        <p>
+                            Интернет-магазин с галереей товаров
+                        </p>
+                        <button class="btn btn-catalog-hover" type="button">14000 Р .</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="pattern-info">
+                <b class="pattern-info-title">SUNSET</b>
+                <p>
+                    Интернет-магазин с личным кабинетом
+                </p>
+                <a class="btn-shop" href="#">10000 Р.</a>
             </div>
         </div>
-        <div class="grid">
-            <h3 class="catalog-title-grid">Сетка:</h3>
+        <div class="main-nav">
             <ul>
-                <li class="radio">
-                    <input type="radio" name="radio" id="radio1" value="adapt" checked>
-                    <label for="radio1">Адаптивная</label>
-                </li>
-                <li class="radio">
-                    <input type="radio" name="radio" id="radio2" value="fix">
-                    <label for="radio2">Фиксированная</label>
-                </li>
-                <li class="radio">
-                    <input type="radio" name="radio" id="radio3" value="rub">
-                    <label for="radio3">Резиновая</label>
-                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">Следующая</a></li>
             </ul>
         </div>
-        <div class="features">
-            <h3 class="catalog-title-features">Особенности:</h3>
-            <ul>
-                <li class="checkbox">
-                    <input type="checkbox" name="slide" id="slide" checked>
-                    <label for="slide">Слайдер</label>
-                </li>
-                <li class="checkbox">
-                    <input type="checkbox" name="block" id="block">
-                    <label for="block">Блок преимуществ</label>
-                </li>
-                <li class="checkbox">
-                    <input type="checkbox" name="news" id="news" checked>
-                    <label for="news">Новости</label>
-                </li>
-                <li class="checkbox">
-                    <input type="checkbox" name="gallery" id="gallery">
-                    <label for="gallery">Галерея</label>
-                </li>
-                <li class="checkbox">
-                    <input type="checkbox" name="cart" id="cart">
-                    <label for="cart">Корзина</label>
-                </li>
-            </ul>
-        </div>
-        <button class="btn btn-catalog-main-left" type="submit">Показать</button>
-    </form>
-    <div class="catalog-content-right clearfix">
-        <div class="catalog-sort">
-            <b class="catalog-title-sort">Сортировать:</b>
-            <ul>
-                <li>
-                    <a href="#">по цене</a>
-                </li>
-                <li>
-                    <a href="#">по типу</a>
-                </li>
-                <li>
-                    <a href="#">по функционалу</a>
-                </li>
-            </ul>
-            <span class="icon-top"></span>
-            <span class="icon-down"></span>
-        </div>
-        <div class="catalog-item">
-            <figure class="catalog pattern1">
-                <a href="#"><img src="img/pattern1.png" width="240" height="240" alt=""></a>
-                <div class="hover-item">
-                    <h3 class="title">Aviator</h3>
-                    <p>
-                        Одностраничный макет с авторским дизайном
-                    </p>
-                    <button class="btn btn-catalog-hover" type="button">8000 Р .</button>
-                </div>
-            </figure>
-            <figure class="catalog pattern2">
-                <a href="#"><img src="img/pattern2.png" width="240" height="240" alt=""></a>
-                <div class="hover-item">
-                    <h3 class="title">Sunset</h3>
-                    <p>
-                        Интернет-магазин с личным кабинетом
-                    </p>
-                    <button class="btn btn-catalog-hover" type="button">10000 Р .</button>
-                </div>
-            </figure>
-            <figure class="catalog pattern3">
-                <a href="#"><img src="img/pattern3.png" width="240" height="240" alt=""></a>
-                <div class="hover-item">
-                    <h3 class="title">Forte</h3>
-                    <p>
-                        Отличный макет для личного блога
-                    </p>
-                    <button class="btn btn-catalog-hover" type="button">5000 Р .</button>
-                </div>
-            </figure>
-            <figure class="catalog pattern4">
-                <a href="#"><img src="img/pattern4.png" width="240" height="240" alt=""></a>
-                <div class="hover-item">
-                    <h3 class="title">Modern Organic Thai</h3>
-                    <p>
-                        Сайт для ресторана быстрого питания
-                    </p>
-                    <button class="btn btn-catalog-hover" type="button">12000 Р .</button>
-                </div>
-            </figure>
-            <figure class="catalog pattern5">
-                <a href="#"><img src="img/pattern5.png" width="240" height="240" alt=""></a>
-                <div class="hover-item">
-                    <h3 class="title">Avenue</h3>
-                    <p>
-                        Макет для блога о путишествиях
-                    </p>
-                    <button class="btn btn-catalog-hover" type="button">8000 Р .</button>
-                </div>
-            </figure>
-            <figure class="catalog pattern6">
-                <a href="#"><img src="img/pattern6.png" width="240" height="240" alt=""></a>
-                <div class="hover-item">
-                    <h3 class="title">Dovetail</h3>
-                    <p>
-                        Интернет-магазин с галереей товаров
-                    </p>
-                    <button class="btn btn-catalog-hover" type="button">14000 Р .</button>
-                </div>
-            </figure>
-        </div>
-        <div class="pattern-info">
-            <b class="pattern-info-title">SUNSET</b>
-            <p>
-                Интернет-магазин с личным кабинетом
-            </p>
-            <a class="btn-shop" href="#">10000 Р.</a>
-        </div>
-    </div>
-    <div class="main-nav">
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
-        </ul>
     </div>
 </main>
 <footer class="main-footer">
@@ -228,6 +229,7 @@
                 <button class="btn btn-contacts" type="submit">Отправить</button>
             </form>
         </div>
+        <div class="overlay"></div>
     </div>
     <div class="footer-content container">
         <div class="footer-social">
@@ -253,5 +255,7 @@
         </div>
     </div>
 </footer>
+
+<script type="text/javascript" src="js/catalog.js"></script>
 </body>
 </html>
